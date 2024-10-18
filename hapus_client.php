@@ -1,5 +1,6 @@
 <?php
 include 'koneksi.php';
+// ini fungsi hapus
 
 if (isset($_GET['No_Kunci'])) {
     $No_Kunci = $_GET['No_Kunci'];
