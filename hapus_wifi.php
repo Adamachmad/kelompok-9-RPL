@@ -1,6 +1,6 @@
 <?php
 include 'koneksi.php';
-
+// ini hapus wifi
 if (isset($_GET['Pass_wifi'])) {
     $Pass_wifi = $_GET['Pass_wifi'];
     $sql = "DELETE FROM wifi WHERE Pass_wifi = '$Pass_wifi'";
