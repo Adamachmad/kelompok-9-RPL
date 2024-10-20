@@ -54,3 +54,11 @@ body {
     font-size: 2.5rem;
     opacity: 0.5;
 }
+.btn-edit {
+    background-color: #003670; /* Biru tua */
+    color: rgb(247, 10, 10);
+}
+.btn-delete {
+    background-color: #0fbdf1; /* Merah muda */
+    color: rgb(24, 230, 110);
+}

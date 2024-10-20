@@ -81,10 +81,13 @@ $result = $link->query($sql);
                                         <td>" . $row["No_Kunci"] . "</td>
                                         <td>" . $row["Alamat"] . "</td>
                                         <td>" . $row["No_Handphone"] . "</td>
+                
                                         <td>
                                             <a href='edit_client.php?No_Kunci=" . $row['No_Kunci'] . "' class='btn btn-warning btn-sm me-1'><i class='fas fa-edit'></i> Edit</a>
-                                            <a href='hapus_client.php?No_Kunci=" . $row['No_Kunci'] . "' class='btn btn-danger btn-sm' onclick='return confirm(\"Apakah Anda yakin ingin data ini?\")'><i class='fas fa-trash'></i> Delete</a>
+                                            <a href='hapus_client.php?No_Kunci=" . $row['No_Kunci'] . "' class='btn btn-danger btn-sm' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data ini?\")'><i class='fas fa-trash'></i> Delete</a>
+
                                         </td>
+                                     
                                     </tr>";
                             }
                         } else {
