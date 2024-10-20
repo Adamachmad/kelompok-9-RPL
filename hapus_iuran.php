@@ -1,6 +1,6 @@
 <?php
 include 'koneksi.php';
-
+// ini hapus iuran
 if (isset($_GET['Id_bayar'])) {
     $Id_bayar = $_GET['Id_bayar'];
     $sql = "DELETE FROM iuran WHERE Id_bayar = '$Id_bayar'";

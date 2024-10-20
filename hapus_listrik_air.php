@@ -1,6 +1,6 @@
 <?php
 include 'koneksi.php';
-
+// ini hapus listrik_air
 if (isset($_GET['Id_listrik'])) {
     $Id_listrik = $_GET['Id_listrik'];
     $sql = "DELETE FROM listrik_air WHERE Id_listrik = '$Id_listrik'";
