@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body class="pt-5">
      <!-- topnavbar -->
      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <a class="navbar-brand ps-3" href="admin_dashboard.html">Dashboard Kost Azzahra</a>
+        <a class="navbar-brand ps-3" href="index.php">Dashboard Kost Azzahra</a>
     </nav>
 
     <?php include 'sidebar.php'; ?>
