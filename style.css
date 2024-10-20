@@ -13,7 +13,7 @@ body {
     position: fixed;
     top: 56px;
     left: 0;
-    background-color: #5024f1;
+    background-color: #2b2c28;
     color: rgb(202, 20, 20);
     padding: 0;
     transition: all 0.3s;
@@ -41,7 +41,7 @@ body {
 }
 
 .sidebar .nav-link:hover {
-    background: #df6b6b;
+    background: #5f5858;
     border-radius: 5px;
 }
 
@@ -55,10 +55,10 @@ body {
     opacity: 0.5;
 }
 .btn-edit {
-    background-color: #003670; /* Biru tua */
-    color: rgb(247, 10, 10);
+    background-color: #007bff; /* Biru tua */
+    color: white;
 }
 .btn-delete {
-    background-color: #0fbdf1; /* Merah muda */
-    color: rgb(24, 230, 110);
+    background-color: #ff6f61; /* Merah muda */
+    color: white;
 }
