@@ -14,7 +14,7 @@ body {
     top: 56px;
     left: 0;
     background-color: #f55050;
-    color: white;
+    color: rgb(202, 20, 20);
     padding: 0;
     transition: all 0.3s;
 }
