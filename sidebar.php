@@ -1,4 +1,4 @@
-<aside id="sidebar" class="sidebar bg-dark text-white p-3">
+<aside id="sidebar" class="sidebar bg-light text-white p-3">
     <div class="user mb-3 text-center">
         <img src="user-image.png" class="user-img rounded-circle mb-2" style="width: 80px; height: 80px;">
         <div class="deskripsi-profile">
