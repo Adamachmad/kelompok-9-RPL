@@ -32,7 +32,7 @@ $result = $link->query($sql);
 
     <!-- topnavbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <a class="navbar-brand ps-3" href="admin_dashboard.html">Dashboard Kost Azzahra</a>
+        <a class="navbar-brand ps-3" href="index.php">Dashboard Kost Azzahra</a>
     </nav>
 
     <!-- Sidebar -->
