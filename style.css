@@ -13,7 +13,7 @@ body {
     position: fixed;
     top: 56px;
     left: 0;
-    background-color: #f55050;
+    background-color: #5024f1;
     color: rgb(202, 20, 20);
     padding: 0;
     transition: all 0.3s;
@@ -41,7 +41,7 @@ body {
 }
 
 .sidebar .nav-link:hover {
-    background: #495057;
+    background: #df6b6b;
     border-radius: 5px;
 }
 
