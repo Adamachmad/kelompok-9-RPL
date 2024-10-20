@@ -1,10 +1,10 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #0a74df;
+    background-color: #f8f9fa;
 }
 
 .navbar {
-    box-shadow: 0 4px 6px -6px #f0bebe;
+    box-shadow: 0 4px 6px -6px #222;
 }
 
 .sidebar {
