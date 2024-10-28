@@ -53,18 +53,15 @@ $result = $link->query($sql);
             </div>
             <div class="card mb-4">
                 <div class="card-header">
-                    <h3>Ini adalah Tabel Iuran</h3>
+                    <h3>Ini adalah </h3>
                 </div>
                 <div class="card-body">
                     <table class="table table-hover">
                         <thead>
                             <tr>
-                                <th scope="col">No</th>
-                                <th scope="col">ID Bayar</th>
+                                <th scope="col">no</th>
+                                <th scope="col">umur</th>
                                 <th scope="col">Nama</th>
-                                <th scope="col">No kamar</th>
-                                <th scope="col">Tunggakan</th>
-                                <th scope="col">Total Bayar</th>
                             </tr>
                         </thead>
                         <tbody>
