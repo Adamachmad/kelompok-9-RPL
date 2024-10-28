@@ -5,7 +5,7 @@ if (isset($_GET['Id_listrik'])) {
     $Id_listrik = $_GET['Id_listrik'];
 
     // Mengambil data pake primary key
-    $stmt = $link->prepare("SELECT * FROM listrik WHERE Id_listrik = ?");
+    $stmt = $link->prepare("SELECT * FROM listrik_air WHERE Id_listrik = ?");
     $stmt->bind_param("s", $Id_listrik);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -23,12 +23,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $No_Kamar = $_POST['No_Kamar'];
     $Nama = $_POST['Nama'];
     $Tunggakan = $_POST['Tunggakan'];
-    $Total_listrik= $_POST['Total_listrik'];
+    $Total_bayar= $_POST['Total_bayar'];
 
 
     // Update data 
-    $stmt = $link->prepare("UPDATE listrik SET Nama = ?, No_Kamar = ?, Tunggakan = ?, Total_listrik = ?  WHERE Id_listrik = ?");
-    $stmt->bind_param("sssss", $Nama, $No_Kamar, $Tunggakan, $Total_listrik, $Id_listrik);
+    $stmt = $link->prepare("UPDATE listrik_air SET Nama = ?, No_Kamar = ?, Tunggakan = ?, Total_bayar = ?  WHERE Id_listrik = ?");
+    $stmt->bind_param("sssss", $Nama, $No_Kamar, $Tunggakan, $Total_bayar, $Id_listrik);
 
     if ($stmt->execute()) {
         echo "<script>alert('Data berhasil diperbarui.'); window.location.href = 'listrik.php';</script>";
@@ -87,9 +87,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 value="<?= htmlspecialchars($row['Tunggakan']) ?>" required>
                         </div>
                         <div class="mb-3">
-                            <label for="Total_listrik" class="form-label">Total_listrik</label>
-                            <input type="text" class="form-control" id="Total_listrik" name="Total_listrik"
-                                value="<?= htmlspecialchars($row['Total_listrik']) ?>" required>
+                            <label for="Total_bayar" class="form-label">Total Bayar</label>
+                            <input type="text" class="form-control" id="Total_bayar" name="Total_bayar"
+                                value="<?= htmlspecialchars($row['Total_bayar']) ?>" required>
                         </div>
                         
                         <button type="submit" class="btn btn-success">Simpan Perubahan</button>
