@@ -35,6 +35,7 @@ $result = $link->query($sql);
         <a class="navbar-brand ps-3" href="index.php">Dashboard Kost Azzahra</a>
     </nav>
 
+    <!-- test -->
     <!-- Sidebar -->
     <?php include 'sidebar.php'; ?>
     
