@@ -23,9 +23,9 @@
             </a>
         </li>
         <li class="nav-item">
-        <a href="listirk.php" class="nav-link text-white">
-           <i class="fas fa-user-tie me-2"></i> piska
-        </a>
+            <a href="listirk.php" class="nav-link text-white">
+              <i class="fas fa-user-tie me-2"></i> piska
+            </a>
         </li>
         <li class="nav-item"> <a href="wifi.php" class="nav-link text-white">
                 <i class="fas fa-user-tie me-2"></i> Wifi
