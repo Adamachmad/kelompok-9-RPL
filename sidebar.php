@@ -24,12 +24,26 @@
             </li>
         <li class="nav-item">
             <a href="listrik.php" class="nav-link text-white">
+<<<<<<< HEAD
                 <i class="fas fa-user-tie me-2"></i> Dina
+=======
+                <i class="fas fa-user-tie me-2"></i> piskapratiwi
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="listirk.php" class="nav-link text-white">
+              <i class="fas fa-user-tie me-2"></i> piska
+>>>>>>> 470b3b6b897c162b6c310483f54124ac3e4e081c
             </a>
         </li>
         <li class="nav-item"> <a href="wifi.php" class="nav-link text-white">
                 <i class="fas fa-user-tie me-2"></i> Wifi
+<<<<<<< HEAD
                 
+=======
+        <li class="nav-item"> <a href="rasma.php" class="nav-link text-white">
+                <i class="fas fa-user-tie me-2"></i> rasma 
+>>>>>>> 470b3b6b897c162b6c310483f54124ac3e4e081c
             </a>
         </li>
     </ul>

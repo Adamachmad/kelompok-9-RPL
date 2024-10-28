@@ -51,48 +51,36 @@ $result = $link->query($sql);
                     </div>
                 </form>
             </div>
-            <div class="card mb-4">
-                <div class="card-header">
-                    <h3>Ini adalah Tabel Listrik & Air</h3>
+
+            <div class="row">
+                <?php
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                ?>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title">ID Listrik: <?= $row["Id_listrik"] ?></h5>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Nama:</strong> <?= $row["Nama"] ?></p>
+                            <p><strong>No Kamar:</strong> <?= $row["No_Kamar"] ?></p>
+                            <p><strong>Tunggakan:</strong> <?= $row["Tunggakan"] ?></p>
+                            <p><strong>Total Bayar:</strong> <?= $row["Total_bayar"] ?></p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <a href="edit_listrik_air.php?Id_listrik=<?= $row['Id_listrik'] ?>" class="btn btn-edit"><i class="fas fa-edit"></i> Edit</a>
+                            <a href="hapus_listrik_air.php?Id_listrik=<?= $row['Id_listrik'] ?>" class="btn btn-delete" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')"><i class="fas fa-trash"></i> Delete</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th scope="col">No</th>
-                                <th scope="col">ID Listrik</th>
-                                <th scope="col">Nama</th>
-                                <th scope="col">No kamar</th>
-                                <th scope="col">Tunggakan</th>
-                                <th scope="col">Total Bayar</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        <?php
-                        if ($result->num_rows > 0) {
-                            $no = 1;
-                            while($row = $result->fetch_assoc()) {
-                                echo "<tr>
-                                        <td>" . $no++ . "</td>
-                                        <td>" . $row["Id_listrik"] . "</td>
-                                        <td>" . $row["Nama"] . "</td>
-                                        <td>" . $row["No_Kamar"] . "</td>
-                                        <td>" . $row["Tunggakan"] . "</td>
-                                        <td>" . $row["Total_bayar"] . "</td>
-                                        <td>
-                                            <a href='edit_listrik_air.php?Id_listrik=" . $row['Id_listrik'] . "' class='btn btn-warning btn-sm me-1'><i class='fas fa-edit'></i> Edit</a>
-                                            <a href='hapus_listrik_air.php?Id_listrik=" . $row['Id_listrik'] . "' class='btn btn-danger btn-sm' onclick='return confirm(\"Apakah Anda yakin ingin data ini?\")'><i class='fas fa-trash'></i> Delete</a>
-                                        </td>
-                                    </tr>";
-                            }
-                        } else {
-                            echo "<tr><td colspan='7' class='text-center'>Tidak ada data akun yang ditemukan.</td></tr>";
-                        }
-                        $link->close();
-                        ?>
-                        </tbody>
-                    </table>
-                </div>
+                <?php
+                    }
+                } else {
+                    echo "<p class='text-center'>Tidak ada data yang ditemukan.</p>";
+                }
+                $link->close();
+                ?>
             </div>
         </div>  
     </div>
