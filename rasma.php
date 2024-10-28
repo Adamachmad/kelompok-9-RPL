@@ -75,7 +75,6 @@ $result = $link->query($sql);
                                         <td>" . $row["Nama"] . "</td>
                                         <td>" . $row["No_Kamar"] . "</td>
                                         <td>" . $row["Tunggakan"] . "</td>
-                                        <td>" . $row["Total_bayar"] . "</td>
                                         <td>
                                             <a href='edit_iuran.php?Id_bayar=" . $row['Id_bayar'] . "' class='btn btn-warning btn-sm me-1'><i class='fas fa-edit'></i> Edit</a>
                                             <a href='hapus_iuran.php?Id_bayar=" . $row['Id_bayar'] . "' class='btn btn-danger btn-sm' onclick='return confirm(\"Apakah Anda yakin ingin data ini?\")'><i class='fas fa-trash'></i> Delete</a>
